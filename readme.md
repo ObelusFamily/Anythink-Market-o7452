@@ -10,4 +10,13 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+### Prerequisites
+Make sure you have `docker` and `docker-composev1.25.5~` installed. Run `docker -v` and `docker-compose -v` to check the installation.
+
+### Running the app
+Run `docker-compose up -d` to start the app. The first run might take a few minutes, so be patient :)
+
+Test by hitting http://localhost:3000/api/ping in the browser.
+If the response is successful, try creating a new user at http://localhost:3001/register
+
+Congratulations, your local Anythink Market is up and running!
